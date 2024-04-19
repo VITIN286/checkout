@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuliz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <div class="dados-titular">
+                <div id="voltar">
+                    <button><img src="svg/voltar.svg" alt="voltar"></button>
+                    <p>Voltar</p>
+                </div>
+                <div class="container4">
+                    <div id="dados">
+                        <h1>Dados do titular</h1>
+                        <input type="text" placeholder="Nome completo" name="nome" id="nome">
+                        <div id="sub-dados">
+                            <input type="email" placeholder="E-mail" name="email" id="email">
+                            <input type="number" placeholder="N°Celular" name="numero" id="numero">
+                        </div>
+                    </div>
+                </div>    
+                <div class="cartoes">
+                    <h2>Qual a forma de pagamento?</h2>
+                    <div class="cards-list">
+                        <a href="pg2.html">
+                            <div id="card">
+                                <img src="svg/credito.svg" alt="credito">
+                                <p id="title">Cartão de Crédito</p>
+                                <p>até 12x</p>
+                            </div>
+                        </a>
+                        <a href="pg3.html">
+                            <div id="card">
+                                <img src="svg/pix.svg" alt="pix">
+                                <p id="title">Pix</p>
+                                <p>à vista</p>
+                            </div>
+                        </a>
+                        <a href="pg4.html">
+                            <div id="card">
+                                <img src="svg/xuliz.svg" alt="xuliz">
+                                <p id="title">Xuliz</p>
+                                <p>até 12x</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <hr>
+                    <div id="logo-rodape">
+                        <p>Powered by</p><img src="svg/xuliz-logo.svg" alt="xuliz-logo">
+                    </div>
+                    <div id="copy">
+                        <p>Xuliz Soluções de Pagamento LTDA. CNPJ: 77.777.777/0001-77</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="container5">
+                <h1>Resumo do pedido</h1>
+                <div id="itens">
+                    <p>Itens do pedido</p>
+                </div>
+                <div class="card-unidade">
+                    <p id="title-un">Caixas com 50 un. - Nasonex</p>
+                    <div id="card2">
+                        <p>400x</p>
+                        <p>R$20.000,00</p>
+                    </div>
+                </div>
+                <div class="pagamento">
+                    <div id="formato">
+                         <div class="forma-pagamento">
+                            <p>Forma de pagamento</p>
+                            <div id="flex-cartao">
+                                <img src="svg/cartao.svg" alt="cartao">
+                                <p>Cartão de Crédito</p>
+                            </div>
+                            <div id="processamento">
+                                <p id="title-tempo">Tempo de processamento</p>
+                                <p id="dia-util">Até 1 dia útil</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="container6">
+                    <div id="total">
+                        <p id="total-pagar">Total a pagar:</p>
+                        <div id="valor-total">
+                            <p>R$ 119,99</p>
+                        </div>
+                        <p id="parcelas">1x de R$119,99 sem juros</p>
+                    </div>
+                </div>
+                <div class="container7">
+                    <button><p>Finalizar pagamento</p></button>
+                    <p id="final-rodape">O pagamento será processado por Xuliz. Ao clicar em “Finalizar pagamento” atesto que li e concordo com os <u>termos de uso</u> e com a <u>política de privacidade</u> do Xuliz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
