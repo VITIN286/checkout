@@ -171,7 +171,7 @@ a{
 
 #sub-dados2>.form-floating{
     display: flex;
-    width: 100%;
+    width: 50%;
 }
 
 #sub-dados>#email{
@@ -752,7 +752,7 @@ input:not(:focus)::placeholder {
 }
 
 #logo-rodape>p{
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 10px;
 }
 
@@ -1272,3 +1272,5 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #999999; /* Cor do texto */
     -webkit-box-shadow: 0 0 0px 1000px white inset; /* Cor do fundo */
 }
+
+

@@ -1,3 +1,4 @@
+//Formatação input DDD
 function formatarDDD() {
     var input = document.getElementById("inputDDD");
     var valor = input.value;
@@ -16,6 +17,81 @@ function formatarDDD() {
         input.classList.remove('placeholder-shown');
     }
 }
+
+
+//Formatação intup CPF
+document.getElementById('cpf').addEventListener('input', function (e) {
+    var cpf = e.target.value.replace(/\D/g, '');
+    cpf = cpf.substring(0, 11); // Limita o CPF a 11 caracteres (sem contar com os pontos e o traço)
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    e.target.value = cpf;
+});
+
+//Formatação input Numero do cartão
+document.getElementById('numeroCartao').addEventListener('input', function (e) {
+    var numeroCartao = e.target.value.replace(/\D/g, '');
+    numeroCartao = numeroCartao.substring(0, 16); // Limita o número do cartão a 16 caracteres
+    numeroCartao = numeroCartao.replace(/(\d{4})(\d)/g, '$1 $2'); // Adiciona espaços a cada 4 dígitos
+    e.target.value = numeroCartao;
+});
+
+//Formatação input Validade 
+document.getElementById('validadeInput').addEventListener('input', function (e) {
+    var input = e.target;
+    var value = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+    var caretPosition = input.selectionStart; // Obtém a posição atual do cursor
+
+    // Formata a entrada como MM/AA
+    if (value.length > 2) {
+        value = value.substring(0, 2) + '/' + value.substring(2, 4);
+    }
+
+    // Ajusta a posição do cursor conforme necessário
+    if (caretPosition === 3 || caretPosition === 6) {
+        caretPosition++;
+    }
+
+    // Atualiza o valor no campo de entrada
+    input.value = value;
+
+    // Define a nova posição do cursor
+    input.setSelectionRange(caretPosition, caretPosition);
+});
+
+//Formatar input CVV
+document.getElementById("validadeInput-cvv").addEventListener("keydown", function(event) {
+    var input = event.target;
+    var valor = input.value;
+
+    // Remove todos os caracteres não numéricos
+    valor = valor.replace(/\D/g, '');
+
+    // Limita a quantidade de dígitos para 3
+    valor = valor.substring(0, 3);
+
+    // Define o valor formatado no campo de entrada
+    input.value = valor;
+
+    // Impede a ação padrão do evento keydown se o campo estiver cheio
+    if (valor.length >= 3 && event.key !== 'Backspace' && event.key !== 'Delete') {
+        event.preventDefault();
+    }
+});
+
+//Formatar para Nome do cartão
+document.getElementById("nomeCartaoInput").addEventListener("input", function(event) {
+    var input = event.target;
+    var valor = input.value;
+
+    // Converte todo o texto para maiúsculas
+    input.value = valor.toUpperCase();
+});
+
+
+//Formatar para Parcelas
+
 
 //PRINCIPAL
 
