@@ -1267,3 +1267,8 @@ u{
     flex-shrink: 0;
     margin: 20px;
 }
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #999999; /* Cor do texto */
+    -webkit-box-shadow: 0 0 0px 1000px white inset; /* Cor do fundo */
+}
