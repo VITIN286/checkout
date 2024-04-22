@@ -29,6 +29,24 @@ document.getElementById('cpf').addEventListener('input', function (e) {
     e.target.value = cpf;
 });
 
+document.getElementById('cpf2').addEventListener('input', function (e) {
+    var cpf = e.target.value.replace(/\D/g, '');
+    cpf = cpf.substring(0, 11); // Limita o CPF a 11 caracteres (sem contar com os pontos e o traço)
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    e.target.value = cpf;
+});
+
+document.getElementById('cpf3').addEventListener('input', function (e) {
+    var cpf = e.target.value.replace(/\D/g, '');
+    cpf = cpf.substring(0, 11); // Limita o CPF a 11 caracteres (sem contar com os pontos e o traço)
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    e.target.value = cpf;
+});
+
 //Formatação input Numero do cartão
 document.getElementById('numeroCartao').addEventListener('input', function (e) {
     var numeroCartao = e.target.value.replace(/\D/g, '');
@@ -88,9 +106,6 @@ document.getElementById("nomeCartaoInput").addEventListener("input", function(ev
     // Converte todo o texto para maiúsculas
     input.value = valor.toUpperCase();
 });
-
-
-//Formatar para Parcelas
 
 
 //PRINCIPAL
