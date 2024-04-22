@@ -10,46 +10,290 @@
 <body>
     <div class="container">
         <div class="container2">
-            <div class="dados-titular">
+            <div id="dados-titular">
                 <div id="voltar">
-                    <button><img src="svg/voltar.svg" alt="voltar"></button>
+                    <a href="#"><button><img src="svg/voltar.svg" alt="voltar"></button></a>
                     <p>Voltar</p>
                 </div>
                 <div class="container4">
                     <div id="dados">
                         <h1>Dados do titular</h1>
-                        <input type="text" placeholder="Nome completo" name="nome" id="nome">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Nome completo</label>
+                        </div>
                         <div id="sub-dados">
-                            <input type="email" placeholder="E-mail" name="email" id="email">
-                            <input type="number" placeholder="N°Celular" name="numero" id="numero">
+                            <div class="form-floating" id="email">
+                                <input type="email" class="form-control" id="floatingInputGroup2" placeholder="">
+                                <label for="floatingInputGroup2">E-mail</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                                <label for="inputDDD">N° Celular</label>
+                            </div>
                         </div>
                     </div>
                 </div>    
                 <div class="cartoes">
                     <h2>Qual a forma de pagamento?</h2>
                     <div class="cards-list">
-                        <a href="pg2.html">
-                            <div id="card">
-                                <img src="svg/credito.svg" alt="credito">
-                                <p id="title">Cartão de Crédito</p>
-                                <p>até 12x</p>
-                            </div>
-                        </a>
-                        <a href="pg3.html">
-                            <div id="card">
-                                <img src="svg/pix.svg" alt="pix">
-                                <p id="title">Pix</p>
-                                <p>à vista</p>
-                            </div>
-                        </a>
-                        <a href="pg4.html">
-                            <div id="card">
-                                <img src="svg/xuliz.svg" alt="xuliz">
-                                <p id="title">Xuliz</p>
-                                <p>até 12x</p>
-                            </div>
-                        </a>
+                        <div onclick="passarValor()" id="card-credito">
+                            <img src="svg/credito.svg" alt="credito">
+                            <p id="title">Cartão de Crédito</p>
+                            <p>até 12x</p>
+                        </div>
+                        <div id="card-pix">
+                            <img src="svg/pix.svg" alt="pix">
+                            <p id="title">Pix</p>
+                            <p>à vista</p>
+                        </div>
+                        <div id="card-xuliz">
+                            <img src="svg/xuliz.svg" alt="xuliz">
+                            <p id="title">Xuliz Pay</p>
+                            <p>até 12x</p>
+                        </div>
                     </div>
+                </div>
+                <div class="rodape">
+                    <hr>
+                    <div id="logo-rodape">
+                        <p>Powered by</p><img src="svg/xuliz-logo.svg" alt="xuliz-logo">
+                    </div>
+                    <div id="copy">
+                        <p>Xuliz Soluções de Pagamento LTDA. CNPJ: 77.777.777/0001-77</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARTÃO-->
+            <div id="dados-titular-cartao">
+                <div id="voltar">
+                    <a href="/index.html"><button><img src="svg/voltar.svg" alt="voltar"></button></a>
+                    <p>Voltar</p>
+                </div>
+                <div class="container4">
+                    <div id="dados">
+                        <h1>Dados do titular</h1>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1-c" placeholder="">
+                            <label for="floatingInputGroup1-c">Nome completo</label>
+                        </div>
+                        <div id="sub-dados">
+                            <div class="form-floating" id="email">
+                                <input type="email" class="form-control" id="floatingInputGroup1" placeholder="">
+                                <label for="floatingInputGroup1">E-mail</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                                <label for="inputDDD">N° Celular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="cartoes">
+                    <h2>Qual a forma de pagamento?</h2>
+                    <div class="cards-list">
+                        <div id="card-credito-c">
+                            <img src="svg/credito-dark.svg" alt="credito">
+                            <p id="title">Cartão de Crédito</p>
+                            <p>até 12x</p>
+                        </div>
+                        <div id="card-pix2">
+                            <img src="svg/pix.svg" alt="pix">
+                            <p id="title">Pix</p>
+                            <p>à vista</p>
+                        </div>
+                        <div id="card-xuliz2">
+                            <img src="svg/xuliz.svg" alt="xuliz">
+                            <p id="title">Xuliz Pay</p>
+                            <p>até 12x</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpf-ct">
+                    <div class="form-floating-cpf">
+                        <input type="email" class="form-control" id="floatingInputGroup1" placeholder="">
+                        <label for="floatingInputGroup1">Digite seu CPF</label>
+                    </div>
+                </div>
+                <div class="info-cartoes1">
+                    <div class="cpf-ct">
+                        <div class="form-floating" id="email">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Número do cartão</label>
+                        </div>
+                    </div>
+                    <div id="sub-dados">
+                        <div class="form-floating" id="email">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Validade (MM/AA)</label>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                            <label for="inputDDD">Código de segurança (CVV)</label>
+                        </div>
+                    </div>
+
+                    <div id="sub-dados2">
+                        <div class="form-floating" id="email">
+                            <input type="email" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Nome no cartão</label>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                            <label for="inputDDD">Parcelas</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape">
+                    <hr>
+                    <div id="logo-rodape">
+                        <p>Powered by</p><img src="svg/xuliz-logo.svg" alt="xuliz-logo">
+                    </div>
+                    <div id="copy">
+                        <p>Xuliz Soluções de Pagamento LTDA. CNPJ: 77.777.777/0001-77</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--PIX-->
+            <div id="dados-titular-pix">
+                <div id="voltar">
+                    <a href="/index.html"><button><img src="svg/voltar.svg" alt="voltar"></button></a>
+                    <p>Voltar</p>
+                </div>
+                <div class="container4">
+                    <div id="dados">
+                        <h1>Dados do titular</h1>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Nome completo</label>
+                        </div>
+                        <div id="sub-dados">
+                            <div class="form-floating" id="email">
+                                <input type="email" class="form-control" id="floatingInputGroup1" placeholder="">
+                                <label for="floatingInputGroup1">E-mail</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                                <label for="inputDDD">N° Celular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="cartoes">
+                    <h2>Qual a forma de pagamento?</h2>
+                    <div class="cards-list">
+                        <div id="card-credito3">
+                            <img src="svg/credito.svg" alt="credito">
+                            <p id="title">Cartão de Crédito</p>
+                            <p>até 12x</p>
+                        </div>
+                        <div id="card-pix-c">
+                            <img src="svg/pix-dark.svg" alt="pix">
+                            <p id="title">Pix</p>
+                            <p>à vista</p>
+                        </div>
+                        <div id="card-xuliz3">
+                            <img src="svg/xuliz.svg" alt="xuliz">
+                            <p id="title">Xuliz Pay</p>
+                            <p>até 12x</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpf-ct">
+                    <div class="form-floating-cpf">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                        <label for="floatingInputGroup1">Digite seu CPF</label>
+                    </div>
+                </div>
+                <div class="info-cartoes">
+                    <img src="svg/chave-pix.svg" alt="chave">
+                    <p>A chave Pix será gerada <strong>após clicar em “Finalizar pagamento”</strong></p>
+                </div>
+                <div class="rodape">
+                    <hr>
+                    <div id="logo-rodape">
+                        <p>Powered by</p><img src="svg/xuliz-logo.svg" alt="xuliz-logo">
+                    </div>
+                    <div id="copy">
+                        <p>Xuliz Soluções de Pagamento LTDA. CNPJ: 77.777.777/0001-77</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Xuliz-->
+            <div id="dados-titular-xuliz">
+                <div id="voltar">
+                    <a href="/index.html"><button><img src="svg/voltar.svg" alt="voltar"></button></a>
+                    <p>Voltar</p>
+                </div>
+                <div class="container4">
+                    <div id="dados">
+                        <h1>Dados do titular</h1>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                            <label for="floatingInputGroup1">Nome completo</label>
+                        </div>
+                        <div id="sub-dados">
+                            <div class="form-floating" id="email">
+                                <input type="email" class="form-control" id="floatingInputGroup1" placeholder="">
+                                <label for="floatingInputGroup1">E-mail</label>
+                            </div>
+                            
+                            <div class="form-floating">
+                                <input type="text" id="inputDDD" oninput="formatarDDD()" placeholder=" ">
+                                <label for="inputDDD">N° Celular</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="cartoes">
+                    <h2>Qual a forma de pagamento?</h2>
+                    <div class="cards-list">
+                        <div id="card-credito4">
+                            <img src="svg/credito.svg" alt="credito">
+                            <p id="title">Cartão de Crédito</p>
+                            <p>até 12x</p>
+                        </div>
+                        <div id="card-pix4">
+                            <img src="svg/pix.svg" alt="pix">
+                            <p id="title">Pix</p>
+                            <p>à vista</p>
+                        </div>
+                        <div id="card-xuliz-c">
+                            <img src="svg/xuliz-dark.svg" alt="xuliz">
+                            <p id="title">Xuliz Pay</p>
+                            <p>até 12x</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpf-ct">
+                    <div class="form-floating-cpf">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                        <label for="floatingInputGroup1">Digite seu CPF</label>
+                    </div>
+                </div>
+                <p id="title-info">Rápido, seguro e com cashback!</p>
+                <div class="info-cartoes2">
+                    <div id="aling-itens-info">
+                        <img src="svg/notificacao.svg" alt="notificacao">
+                        <p>Você receberá uma <strong>notificação em seu celular</strong> para confirmar o pagamento</p>
+                    </div>
+                    <div id="aling-itens-info">
+                        <img src="svg/pagamento-click.svg" alt="pagamento">
+                        <p>Pagamento com <strong>um clique</strong></p>
+                    </div>
+                    <div id="aling-itens-info">
+                        <img src="svg/seguro.svg" alt="seguro">
+                        <p>É <strong>seguro e protegido</strong> pelo app do Xuliz</p>
+                    </div>
+
+                    <p id="p-m">*Esta forma de pagamento facilitada está disponível apenas para clientes Xuliz.</p>
                 </div>
                 <div class="rodape">
                     <hr>
@@ -80,12 +324,12 @@
                          <div class="forma-pagamento">
                             <p>Forma de pagamento</p>
                             <div id="flex-cartao">
-                                <img src="svg/cartao.svg" alt="cartao">
-                                <p>Cartão de Crédito</p>
+                                <img id="tipo-pag" src="">
+                                <p id="tipo">Pendente</p>
                             </div>
                             <div id="processamento">
                                 <p id="title-tempo">Tempo de processamento</p>
-                                <p id="dia-util">Até 1 dia útil</p>
+                                <p id="dia-util">Não se aplica</p>
                             </div>
                          </div>
                     </div>
@@ -100,7 +344,7 @@
                     </div>
                 </div>
                 <div class="container7">
-                    <button><p>Finalizar pagamento</p></button>
+                    <button><p id="final-p">Finalizar pagamento</p><img id="logo-final" src="svg/finalizar-xuliz.svg"></button>
                     <p id="final-rodape">O pagamento será processado por Xuliz. Ao clicar em “Finalizar pagamento” atesto que li e concordo com os <u>termos de uso</u> e com a <u>política de privacidade</u> do Xuliz.</p>
                 </div>
             </div>
