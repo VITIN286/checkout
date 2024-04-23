@@ -29,8 +29,8 @@
 
 .container2{
     background: var(--xuliz-colors-brancoc, #F1F1F1);
-    width: 690px;
-    height: 620px;
+    width: 620px;
+    height: 640px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -41,8 +41,8 @@
 
 .container3{
     background: var(--xuliz-colors-pretoc, #3D3D3D);
-    width: 390px;
-    height: 620px;
+    width: 360px;
+    height: 640px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -52,12 +52,9 @@
 }
 
 #dados-titular{
-    position: relative;
-    transform: scale(0.9);
+    transform: scale(0.7);
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
-    max-height: 650px; /* Define uma altura máxima para o contêiner */
     display: block;
 }
 
@@ -106,62 +103,13 @@ a{
     line-height: normal;
 }
 
-/*#nome{
-    width: 100%;
-    padding: 5px; 
-    border: 1px solid #ccc; 
-    box-sizing: border-box;
-
-    border-radius: 10px;
-    border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
-    background: var(--XulizColors-BRANCO, #FFF);
-
-    display: flex;
-    padding: 10px 50px 10px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2px;
-    margin-bottom: 8px;
-}
-
-#email{
-    width: 50%;
-    border-radius: 10px;
-    border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
-    background: var(--XulizColors-BRANCO, #FFF);
-    
-    display: flex;
-    padding: 10px 50px 10px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2px;
-    margin-right: 4px;
-}
-
-#numero{
-    width: 50%;
-    border-radius: 10px;
-    border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
-    background: var(--XulizColors-BRANCO, #FFF);
-    
-    display: flex;
-    padding: 10px 50px 10px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2px;
-    margin-left: 4px;
-}*/
-
 #sub-dados{
     display: flex;
 }
 
 #sub-dados2{
     display: flex;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 #sub-dados>.form-floating{
@@ -197,13 +145,12 @@ a{
 
 .form-floating-cpf {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 
 .form-floating input {
     width: 100%;
-    padding: 5px; 
     border: 1px solid #ccc; 
     box-sizing: border-box;
 
@@ -247,7 +194,7 @@ a{
 
     position: absolute;
     top: 50%;
-    left: 0.75rem;
+    left: 21px;
     transform: translateY(-50%);
     color: #6c757d;
     pointer-events: none;
@@ -264,7 +211,7 @@ a{
 
     position: absolute;
     top: 50%;
-    left: 0.75rem;
+    left: 21px;
     transform: translateY(-50%);
     color: #6c757d;
     pointer-events: none;
@@ -361,7 +308,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card>img{
@@ -400,7 +347,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-credito>img{
@@ -439,7 +386,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-credito3>img{
@@ -478,7 +425,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-credito4>img{
@@ -517,7 +464,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-pix>img{
@@ -556,7 +503,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-pix2>img{
@@ -595,7 +542,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-pix4>img{
@@ -634,7 +581,7 @@ input:not(:focus)::placeholder {
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-xuliz>img{
@@ -765,12 +712,12 @@ input:not(:focus)::placeholder {
 }
 
 #logo-rodape>img{
-    width: 25px;
-    height: 25px;
+    width: auto;
+    height: 12px;
 }
 
 #copy{
-    margin-left: 180px;
+    margin-left: 100px;
 }
 
 #copy>p{
@@ -1063,12 +1010,9 @@ u{
 /*PAGINA CARTOES*/
 
 #dados-titular-cartao {
-    position: relative;
-    transform: scale(0.9);
+    transform: scale(0.7);
     display: flex;
     flex-direction: column;
-    overflow-y: auto; 
-    max-height: 600px;
     display: none;
 }
 
@@ -1077,17 +1021,11 @@ u{
     border-radius: 10px;
     border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
     background: var(--XulizColors-BRANCO, #FFF);
-    
     display: flex;
     padding: 10px 50px 10px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2px;
-}
-
-.cpf-ct{
-    margin-bottom: 25px;
 }
 
 .info-cartoes{
@@ -1102,7 +1040,7 @@ u{
     border-radius: 10px;
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-credito-c>#title{
@@ -1136,12 +1074,9 @@ u{
 /*PAGINA PIX*/
 
 #dados-titular-pix {
-    position: relative;
-    transform: scale(0.9);
+    transform: scale(0.7);
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    max-height: 600px;
     display: none;
 }
 
@@ -1152,7 +1087,7 @@ u{
     border-radius: 10px;
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-pix-c>#title{
@@ -1187,12 +1122,9 @@ u{
 /*PAGINA XULIZ*/
 
 #dados-titular-xuliz {
-    position: relative;
-    transform: scale(0.9);
+    transform: scale(0.7);
     display: flex;
     flex-direction: column;
-    overflow-y: auto; 
-    max-height: 600px;
     display: none;
 }
 
@@ -1204,6 +1136,16 @@ u{
 }
 
 .info-cartoes>p{
+    color: var(--xuliz-colors-pretoc, #3D3D3D);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.info-cartoes2>p{
     color: var(--xuliz-colors-pretoc, #3D3D3D);
     font-family: Montserrat;
     font-size: 14px;
@@ -1227,16 +1169,17 @@ u{
 #aling-itens-info{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #aling-itens-info>p{
     margin-left: 10px;
+    font-size: 14px;
 }
 
 #p-m{
-    margin-bottom: 35px;
-    font-size: 15px;
+    margin-bottom: 30px;
+    font-size: 13px;
 }
 
 #card-xuliz-c{
@@ -1246,7 +1189,7 @@ u{
     border-radius: 10px;
     border: 1px solid var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     background: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #card-xuliz-c>#title{
@@ -1299,7 +1242,7 @@ input:-webkit-autofill {
 
 .form-select-parcelas {
     margin: 2px;
-    margin-left: 19px;
+    margin-left: 10px;
     width: 89%;
     height: 90%;
     border: none;

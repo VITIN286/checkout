@@ -1,22 +1,22 @@
 //Formatação input DDD
 function formatarDDD() {
     var input = document.getElementById("inputDDD");
-    var valor = input.value;
+    var valor = input.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
     
-    valor = valor.replace(/\D/g, '');
-    
-    if (valor.length >= 2) {
-        valor = "(" + valor.substring(0, 2) + ")" + valor.substring(2);
-    }
+    // Formatar para "(99) 9 9999-9999"
+    valor = valor.substring(0, 11); // Limitar o comprimento a 11 caracteres
+    valor = valor.replace(/(\d{2})(\d)(\d{4})(\d{4})/, "($1) $2 $3-$4");
     
     input.value = valor;
 
+    // Adicionar ou remover a classe 'placeholder-shown' conforme necessário
     if (input.value) {
         input.classList.add('placeholder-shown');
     } else {
         input.classList.remove('placeholder-shown');
     }
 }
+
 
 
 //Formatação intup CPF
@@ -49,11 +49,12 @@ document.getElementById('cpf3').addEventListener('input', function (e) {
 
 //Formatação input Numero do cartão
 document.getElementById('numeroCartao').addEventListener('input', function (e) {
-    var numeroCartao = e.target.value.replace(/\D/g, '');
-    numeroCartao = numeroCartao.substring(0, 16); // Limita o número do cartão a 16 caracteres
-    numeroCartao = numeroCartao.replace(/(\d{4})(\d)/g, '$1 $2'); // Adiciona espaços a cada 4 dígitos
+    var numeroCartao = e.target.value.replace(/\D/g, ''); // Remover todos os caracteres não numéricos
+    numeroCartao = numeroCartao.substring(0, 16); // Limitar o número do cartão a 16 caracteres
+    numeroCartao = numeroCartao.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/, "$1 $2 $3 $4"); // Adicionar espaços a cada 4 dígitos
     e.target.value = numeroCartao;
 });
+
 
 //Formatação input Validade 
 document.getElementById('validadeInput').addEventListener('input', function (e) {
@@ -80,23 +81,27 @@ document.getElementById('validadeInput').addEventListener('input', function (e) 
 
 //Formatar input CVV
 document.getElementById("validadeInput-cvv").addEventListener("keydown", function(event) {
+    // Obter o elemento de entrada
     var input = event.target;
+
+    // Obter o valor atual do campo
     var valor = input.value;
 
-    // Remove todos os caracteres não numéricos
+    // Remover todos os caracteres não numéricos
     valor = valor.replace(/\D/g, '');
 
-    // Limita a quantidade de dígitos para 3
+    // Limitar a quantidade de dígitos para 3
     valor = valor.substring(0, 3);
 
-    // Define o valor formatado no campo de entrada
+    // Definir o valor formatado no campo de entrada
     input.value = valor;
 
-    // Impede a ação padrão do evento keydown se o campo estiver cheio
+    // Impedir a ação padrão do evento keydown se o campo estiver cheio
     if (valor.length >= 3 && event.key !== 'Backspace' && event.key !== 'Delete') {
         event.preventDefault();
     }
 });
+
 
 //Formatar para Nome do cartão
 document.getElementById("nomeCartaoInput").addEventListener("input", function(event) {
@@ -123,7 +128,6 @@ function toggleLabel(select) {
     parcelas.textContent = option.textContent;
 }
 
-
 //PRINCIPAL
 
 let credito = document.getElementById('card-credito');
@@ -137,6 +141,24 @@ let tipoPagamento = document.getElementById('tipo-pag');
 let finalLogo = document.getElementById('logo-final');
 
 credito.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c').value = valorInput;
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email').value = valorInput;
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell').value = valorInput;
 
     if(divCredito.style.display === 'block'){
         divCredito.style.display = 'none';
@@ -157,9 +179,30 @@ credito.addEventListener('click', function(){
 
     //Tempo de processamento
     document.getElementById('dia-util').innerHTML = 'Até 1 dia útil';
+
 });
 
 pix.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-pix').value = valorInput;
 
     if(divPix.style.display === 'block'){
         divPix.style.display = 'none';
@@ -183,6 +226,26 @@ pix.addEventListener('click', function(){
 });
 
 xuliz.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-xuliz').value = valorInput;
 
     if(divXuliz.style.display === 'block'){
         divXuliz.style.display = 'none';
@@ -222,6 +285,32 @@ let divXuliz2 = document.getElementById('dados-titular-xuliz');
 
 pix2.addEventListener('click', function(){
 
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-pix').value = valorInput;
+
+    // Pegar o valor do input principal-cpf
+    var valorInput = document.getElementById('cpf').value;
+
+    // Passar o valor para outro input-cpf
+    document.getElementById('cpf2').value = valorInput;
+
     if(divPix2.style.display === 'block'){
         divPix2.style.display = 'none';
     }else{
@@ -244,6 +333,26 @@ pix2.addEventListener('click', function(){
 });
 
 xuliz2.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-xuliz').value = valorInput;
 
     if(divXuliz2.style.display === 'block'){
         divXuliz2.style.display = 'none';
@@ -281,6 +390,24 @@ let divXuliz3 = document.getElementById('dados-titular-xuliz');
 
 credito3.addEventListener('click', function(){
 
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c').value = valorInput;
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email').value = valorInput;
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell').value = valorInput;
+
     if(divCredito.style.display === 'block'){
         divCredito.style.display = 'none';
     }else{
@@ -303,6 +430,32 @@ credito3.addEventListener('click', function(){
 });
 
 xuliz3.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-xuliz').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-xuliz').value = valorInput;
+
+     // Pegar o valor do input principal-cpf
+     var valorInput = document.getElementById('cpf').value;
+
+     // Passar o valor para outro input-cpf
+     document.getElementById('cpf3').value = valorInput;
 
     if(divXuliz.style.display === 'block'){
         divXuliz.style.display = 'none';
@@ -340,6 +493,24 @@ let divPix4 = document.getElementById('dados-titular-pix');
 
 credito4.addEventListener('click', function(){
 
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c').value = valorInput;
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email').value = valorInput;
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell').value = valorInput;
+
     if(divCredito.style.display === 'block'){
         divCredito.style.display = 'none';
     }else{
@@ -362,6 +533,26 @@ credito4.addEventListener('click', function(){
 });
 
 pix4.addEventListener('click', function(){
+
+    // Pegar o valor do input principal-Nome
+    var valorInput = document.getElementById('floatingInputGroup1').value;
+
+    // Passar o valor para outro input-Nome
+    document.getElementById('floatingInputGroup1-c-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-E-mail
+    var valorInput = document.getElementById('floatingInputGroup2').value;
+
+    // Passar o valor para outro input-E-mail
+    document.getElementById('floatingInputGroup2-email-pix').value = valorInput;
+
+
+    // Pegar o valor do input principal-Celular
+    var valorInput = document.getElementById('inputDDD').value;
+
+    // Passar o valor para outro input-Celular
+    document.getElementById('inputDDD-cell-pix').value = valorInput;
 
     if(divPix.style.display === 'block'){
         divPix.style.display = 'none';
