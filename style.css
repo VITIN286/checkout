@@ -1236,6 +1236,7 @@ u{
 
 #p-m{
     margin-bottom: 35px;
+    font-size: 15px;
 }
 
 #card-xuliz-c{
@@ -1282,3 +1283,73 @@ input:-webkit-autofill {
 }
 
 /*Form*/
+
+
+.form-floating-parcelas {
+    position: relative;
+    width: 50%;
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
+    background: var(--XulizColors-BRANCO, #FFF);
+    cursor: pointer;
+}
+
+.form-select-parcelas {
+    margin: 2px;
+    margin-left: 19px;
+    width: 89%;
+    height: 90%;
+    border: none;
+    cursor: pointer;
+}
+
+.form-select-parcelas:focus {
+    outline: 0;
+}
+
+.form-floating-parcelas label {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 20px;
+    color: var(--XulizColors-CINZA-PADRÂO);
+
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #6c757d;
+    pointer-events: none;
+    transition: top 0.17s ease-in-out, padding 0.15s ease-in-out, font-size 0.15s ease-in-out;
+}
+
+.form-floating-parcelas label.active {
+    top: 0;
+    font-weight: 500;
+    font-size: 11px;
+    color: #6c757d;
+    transform: translateY(0);
+}
+
+/* Oculta a opção padrão */
+.form-select-parcelas option[disabled] {
+    display: none;
+}
+
+option::selection {
+    background-color: #007bff; /* Cor de fundo do texto selecionado */
+    color: #ffffff; /* Cor do texto selecionado */
+}
+
+#floatingSelectGrid{
+    color: #6c757d;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 20px;
+}

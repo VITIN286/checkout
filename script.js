@@ -107,6 +107,22 @@ document.getElementById("nomeCartaoInput").addEventListener("input", function(ev
     input.value = valor.toUpperCase();
 });
 
+//Formatar para parcelas
+function toggleLabel(select) {
+    var label = select.nextElementSibling;
+    if (select.value !== '') {
+        label.classList.add('active');
+    } else {
+        label.classList.remove('active');
+    }
+
+    // Função para atualizar as parcelas em tempo real
+    var select = document.getElementById("floatingSelectGrid");
+    var option = select.options[select.selectedIndex];
+    var parcelas = document.getElementById("parcelas");
+    parcelas.textContent = option.textContent;
+}
+
 
 //PRINCIPAL
 
@@ -367,4 +383,3 @@ pix4.addEventListener('click', function(){
     //Tempo de processamento
     document.getElementById('dia-util').innerHTML = 'Imediato';
 });
-

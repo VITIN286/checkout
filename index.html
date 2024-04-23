@@ -140,9 +140,14 @@
                             <input type="text" class="form-control" id="nomeCartaoInput" placeholder="">
                             <label for="nomeCartaoInput">Nome do cartão</label>
                         </div>                                         
-                        <div class="form-floating" id="validade">
-                            <input type="text" class="form-control" id="validadeInput-parcelas" placeholder="">
-                            <label for="validadeInput">Parcelas</label>
+                        <div class="form-floating-parcelas">
+                            <select class="form-select-parcelas" id="floatingSelectGrid" onchange="toggleLabel(this)">
+                                <option value="mod" selected disabled></option>
+                                <option id="1x" value="1">1x de R$119,99 sem juros</option>
+                                <option id="2x" value="2">2x de R$59,99 sem juros</option>
+                                <option id="3x" value="3">3x de R$39,99 sem juros</option>
+                            </select>
+                            <label for="floatingSelectGrid">Parcelas</label>
                         </div>
                     </div>
                 </div>
