@@ -175,11 +175,19 @@ a{
 }
 
 #sub-dados>#email{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #sub-dados2>#email{
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+#validadeInput{
+    margin-right: 5px;
+}
+
+#nomeCartaoInput{
+    margin-right: 5px;
 }
 
 .form-floating {
@@ -1065,7 +1073,7 @@ u{
 }
 
 #cpf{
-    width: 39%;
+    width: 50%;
     border-radius: 10px;
     border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
     background: var(--XulizColors-BRANCO, #FFF);
@@ -1273,4 +1281,4 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset; /* Cor do fundo */
 }
 
-
+/*Form*/
