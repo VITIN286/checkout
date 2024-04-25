@@ -789,7 +789,7 @@ input:not(:focus)::placeholder {
 }
 
 #copy{
-    margin-left: 100px;
+    margin-left: 29%;
 }
 
 #copy>p{
