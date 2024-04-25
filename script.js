@@ -17,8 +17,6 @@ function formatarDDD() {
     }
 }
 
-
-
 //Formatação intup CPF
 document.getElementById('cpf').addEventListener('input', function (e) {
     var cpf = e.target.value.replace(/\D/g, '');
@@ -179,7 +177,6 @@ credito.addEventListener('click', function(){
 
     //Tempo de processamento
     document.getElementById('dia-util').innerHTML = 'Até 1 dia útil';
-
 });
 
 pix.addEventListener('click', function(){

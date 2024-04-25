@@ -29,8 +29,8 @@
 
 .container2{
     background: var(--xuliz-colors-brancoc, #F1F1F1);
-    width: 620px;
-    height: 640px;
+    width: 680px;
+    height: 720px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -41,8 +41,8 @@
 
 .container3{
     background: var(--xuliz-colors-pretoc, #3D3D3D);
-    width: 360px;
-    height: 640px;
+    width: 440px;
+    height: 720px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -52,10 +52,11 @@
 }
 
 #dados-titular{
-    transform: scale(0.7);
+    transform: scale(0.8);
     display: flex;
     flex-direction: column;
     display: block;
+    width: 120%;
 }
 
 a{
@@ -145,7 +146,7 @@ a{
 
 .form-floating-cpf {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 
@@ -199,6 +200,7 @@ a{
     color: #6c757d;
     pointer-events: none;
     transition: top 0.17s ease-in-out, padding 0.15s ease-in-out, font-size 0.15s ease-in-out;
+    display: inline-block;
 }
 
 .form-floating-cpf label {
@@ -221,6 +223,7 @@ a{
 .form-floating input:not(:placeholder-shown) + label,
 .form-floating input:focus + label {
     top: 0;
+    margin-top: 3px;
     font-weight: 500;
     font-size: 11px;
     color: #6c757d;
@@ -231,6 +234,7 @@ a{
 .form-floating-cpf input:focus + label {
     top: 0;
     font-weight: 500;
+    margin-top: 3px;
     font-size: 11px;
     color: #6c757d;
     transform: translateY(0);
@@ -238,6 +242,74 @@ a{
 
 .form-floating input::placeholder {
     color: transparent;
+}
+
+/*Input Principal*/
+
+#floatingInputGroup1{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#floatingInputGroup2{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#inputDDD{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+/*Input Cartão*/
+
+#floatingInputGroup1-c{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#floatingInputGroup2-email{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#inputDDD-cell{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+/*Input PIX*/
+
+#floatingInputGroup1-c-pix{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#floatingInputGroup2-email-pix{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#inputDDD-cell-pix{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+/*Input Xuliz*/
+
+#floatingInputGroup1-c-xuliz{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#floatingInputGroup2-email-xuliz{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#inputDDD-cell-xuliz{
+    padding-top: 18px;
+    padding-bottom: 4px;
 }
 
 ::placeholder {
@@ -731,7 +803,8 @@ input:not(:focus)::placeholder {
 
 .container5{
     position: absolute;
-    transform: scale(0.7);   
+    transform: scale(0.7);
+    width: 110%;   
 }
 
 .container5>h1{
@@ -1010,10 +1083,37 @@ u{
 /*PAGINA CARTOES*/
 
 #dados-titular-cartao {
-    transform: scale(0.7);
+    transform: scale(0.8);
     display: flex;
     flex-direction: column;
     display: none;
+    width: 120%;
+}
+
+#numeroCartao{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#validadeInput{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#validadeInput-cvv{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#nomeCartaoInput{
+    padding-top: 18px;
+    padding-bottom: 4px;
+}
+
+#floatingSelectGrid{
+    padding-top: 18px;
+    padding-bottom: 4px;
+    margin-left: 15px;
 }
 
 #cpf{
@@ -1026,6 +1126,8 @@ u{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 18px;
+    padding-bottom: 4px;
 }
 
 .info-cartoes{
@@ -1074,10 +1176,16 @@ u{
 /*PAGINA PIX*/
 
 #dados-titular-pix {
-    transform: scale(0.7);
+    transform: scale(0.8);
     display: flex;
     flex-direction: column;
     display: none;
+    width: 120%;
+}
+
+#cpf2{
+    padding-top: 18px;
+    padding-bottom: 4px;
 }
 
 #card-pix-c{
@@ -1122,10 +1230,16 @@ u{
 /*PAGINA XULIZ*/
 
 #dados-titular-xuliz {
-    transform: scale(0.7);
+    transform: scale(0.8);
     display: flex;
     flex-direction: column;
     display: none;
+    width: 120%;
+}
+
+#cpf3{
+    padding-top: 18px;
+    padding-bottom: 4px;
 }
 
 .info-cartoes{
@@ -1227,7 +1341,9 @@ input:-webkit-autofill {
 
 /*Form*/
 
-
+#floatingInputGroup1{
+    margin-top: 10px;
+}
 .form-floating-parcelas {
     position: relative;
     width: 50%;
@@ -1260,6 +1376,7 @@ input:-webkit-autofill {
     font-style: normal;
     line-height: 20px;
     color: var(--XulizColors-CINZA-PADRÂO);
+    margin-left: 7px;
 
     position: absolute;
     top: 50%;
