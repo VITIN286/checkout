@@ -2347,18 +2347,34 @@ option::selection {
 
 @media screen and (max-width: 390px) {
     .container{
-        display: block;
-        padding: 30px;
+        display: inline;
+        margin: 0;
+        padding: 10px;
     }
 
     .container2{
-        display: flex;
-        height: 170%;
+        margin: 0;
+        padding: 0;
     }
 
     #dados-titular{
-        flex: 1;
-        margin-bottom: 50px;
+        padding: auto;
+        margin: auto;
+    }
+
+    #dados-titular-cartao{
+        padding: auto;
+        margin: auto;
+    }
+
+    #dados-titular-pix{
+        padding: auto;
+        margin: auto;
+    }
+
+    #dados-titular-xuliz{
+        padding: auto;
+        margin: auto;
     }
 
     .cards-list{
@@ -2401,10 +2417,6 @@ option::selection {
 
     /*Cartão*/
 
-    #dados-titular-cartao{
-        min-height: 100px;
-    }
-
     #cpf{
         width: 100%;
     }
@@ -2418,11 +2430,6 @@ option::selection {
 
     /*PIX*/
 
-    #dados-titular-pix{
-        flex: 1;
-        margin-bottom: 50px;
-    }
-
     #cpf2{
         width: 100%;
     }
@@ -2435,11 +2442,6 @@ option::selection {
     }
 
     /*Xuliz*/
-
-    #dados-titular-xuliz{
-        flex: 1;
-        margin-bottom: 50px;
-    }
 
     #card-credito4,
     #card-pix4,
