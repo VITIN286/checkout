@@ -429,7 +429,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-credito>#title{
+#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -439,7 +439,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-credito>p{
+.block-title>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -468,7 +468,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-credito3>#title{
+#card-credito3>.block-title3>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -478,7 +478,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-credito3>p{
+#card-credito3>.block-title3>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -507,7 +507,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-credito4>#title{
+#card-credito4>.block-title4>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -517,7 +517,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-credito4>p{
+#card-credito4>.block-title4>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -585,7 +585,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-pix2>#title{
+#card-pix2>.block-title2>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -595,7 +595,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-pix2>p{
+#card-pix2>.block-title2>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -624,7 +624,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-pix4>#title{
+#card-pix4>.block-title4>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -634,7 +634,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-pix4>p{
+#card-pix4>.block-title4>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -702,7 +702,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-xuliz2>#title{
+#card-xuliz2>.block-title2>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -712,7 +712,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-xuliz2>p{
+#card-xuliz2>.block-title2>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -741,7 +741,7 @@ input:not(:focus)::placeholder {
     margin: 20px;
 }
 
-#card-xuliz3>#title{
+#card-xuliz3>.block-title3>#title{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
@@ -751,7 +751,7 @@ input:not(:focus)::placeholder {
     line-height: normal;
 }
 
-#card-xuliz3>p{
+#card-xuliz3>.block-title3>p{
     margin-left: 20px;
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     font-family: Montserrat;
@@ -1076,7 +1076,7 @@ u{
     margin-right: 10px;
 }
 
-#card-credito-c>#title{
+.block-title2>#title{
     margin-left: 20px;
     color: var(--xuliz-colors-pretoc, #3D3D3D);
     font-family: Montserrat;
@@ -1087,7 +1087,7 @@ u{
 }
 
 
-#card-credito-c>p{
+.block-title2>p{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
     font-family: Montserrat;
@@ -1129,7 +1129,7 @@ u{
     margin-right: 10px;
 }
 
-#card-pix-c>#title{
+#card-pix-c>.block-title3>#title{
     margin-left: 20px;
     color: var(--xuliz-colors-pretoc, #3D3D3D);
     font-family: Montserrat;
@@ -1140,7 +1140,7 @@ u{
 }
 
 
-#card-pix-c>p{
+#card-pix-c>.block-title3>p{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
     font-family: Montserrat;
@@ -1237,7 +1237,7 @@ u{
     margin-right: 10px;
 }
 
-#card-xuliz-c>#title{
+#card-xuliz-c>.block-title4>#title{
     margin-left: 20px;
     color: var(--xuliz-colors-pretoc, #3D3D3D);
     font-family: Montserrat;
@@ -1248,7 +1248,7 @@ u{
 }
 
 
-#card-xuliz-c>p{
+#card-xuliz-c>.block-title4>p{
     margin-left: 20px;
     color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
     font-family: Montserrat;
@@ -2353,8 +2353,8 @@ option::selection {
     }
 
     .container2{
-        margin: 0;
-        padding: 0;
+        height: auto;
+        padding-bottom: 80px;
     }
 
     #dados-titular{
@@ -2390,7 +2390,77 @@ option::selection {
     #card-xuliz {
         width: 100%;
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
     }
+
+    #card-credito-c,
+    #card-pix2,
+    #card-xuliz2 {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #card-credito3,
+    #card-pix-c,
+    #card-xuliz3 {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #card-credito4,
+    #card-pix4,
+    #card-xuliz-c {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #card-credito>img,
+    #card-pix>img,
+    #card-xuliz>img {
+        width: 20px;
+        margin-bottom: 35px;
+    }
+
+    #card-credito-c>img,
+    #card-pix2>img,
+    #card-xuliz2>img {
+        width: 20px;
+        margin-bottom: 35px;
+    }
+
+    #card-credito3>img,
+    #card-pix-c>img,
+    #card-xuliz3>img {
+        width: 20px;
+        margin-bottom: 35px;
+    }
+
+    #card-credito4>img,
+    #card-pix4>img,
+    #card-xuliz-c>img {
+        width: 20px;
+        margin-bottom: 35px;
+    }
+
+    /*.block-title{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #title{
+        font-size: 15px;
+    }
+
+    .block-title>p{
+        font-size: 15px;
+    }*/
 
     #logo-rodape>p{
         margin-right: 5px;
@@ -2403,7 +2473,7 @@ option::selection {
     }
 
     #copy{
-        margin-left: 8%;
+        margin-left: 20%;
     }
 
     #copy>p{
@@ -2416,6 +2486,35 @@ option::selection {
     }
 
     /*Cartão*/
+
+    /*.block-title2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-title2>#title{
+        font-size: 15px;
+    }
+
+    .block-title2>p{
+        font-size: 15px;
+    }
+
+    #card-pix2>.block-title2>#title{
+        font-size: 15px;
+    }
+
+    #card-pix2>.block-title2>p{
+        font-size: 15px;
+    }
+
+    #card-xuliz2>.block-title2>#title{
+        font-size: 15px;
+    }
+
+    #card-xuliz2>.block-title2>p{
+        font-size: 15px;
+    }*/
 
     #cpf{
         width: 100%;
