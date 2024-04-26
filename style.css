@@ -2353,11 +2353,11 @@ option::selection {
 
     .container2{
         display: flex;
+        height: 180%;
     }
 
     #dados-titular{
         flex: 1;
-        transform: scale(0.9);
         margin-bottom: 50px;
     }
 
@@ -2369,50 +2369,49 @@ option::selection {
         display: block;
     }
     
-    #card-credito{
-        width: 330px;
-        height: 120px;
+    #card-credito,
+    #card-pix,
+    #card-xuliz {
+        width: 100%;
         margin-bottom: 10px;
     }
 
-    #card-pix{
-        width: 330px;
-        height: 120px;
-        margin-bottom: 10px;
+    #logo-rodape>p{
+        margin-right: 5px;
+        font-size: 7px;
+    }
+    
+    #logo-rodape>img{
+        width: auto;
+        height: 10px;
     }
 
-    #card-xuliz{
-        width: 330px;
-        height: 120px;
+    #copy{
+        margin-left: 8%;
     }
 
-    .container5{
-        transform: scale(0.8);
+    #copy>p{
+        white-space: nowrap;
+        font-size: 7px;
+    }
+
+    #logo-rodape>p{
+        white-space: nowrap;
     }
 
     /*Cartão*/
 
     #dados-titular-cartao{
-        flex: 1;
-        transform: scale(0.9);
-        margin-bottom: 50px;
+        min-height: 100px;
     }
 
     #cpf{
         width: 100%;
     }
 
-    #card-credito-c{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-pix2{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-xuliz2{
+    #card-credito-c,
+    #card-pix2,
+    #card-xuliz2 {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -2421,7 +2420,6 @@ option::selection {
 
     #dados-titular-pix{
         flex: 1;
-        transform: scale(0.9);
         margin-bottom: 50px;
     }
 
@@ -2429,17 +2427,9 @@ option::selection {
         width: 100%;
     }
 
-    #card-credito3{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-pix-c{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-xuliz3{
+    #card-credito3,
+    #card-pix-c,
+    #card-xuliz3 {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -2448,21 +2438,12 @@ option::selection {
 
     #dados-titular-xuliz{
         flex: 1;
-        transform: scale(0.9);
         margin-bottom: 50px;
     }
 
-    #card-credito4{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-pix4{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #card-xuliz-c{
+    #card-credito4,
+    #card-pix4,
+    #card-xuliz-c {
         width: 100%;
         margin-bottom: 10px;
     }
