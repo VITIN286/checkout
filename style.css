@@ -2357,61 +2357,40 @@ option::selection {
         padding-bottom: 80px;
     }
 
-    #dados-titular{
+    #floatingInputGroup1,
+    #floatingInputGroup2,
+    #inputDDD {
+        padding: 15px;
+    }
+
+    #dados-titular,
+    #dados-titular-cartao,
+    #dados-titular-pix,
+    #dados-titular-xuliz {
         padding: auto;
-        margin: auto;
-    }
-
-    #dados-titular-cartao{
-        padding: auto;
-        margin: auto;
-    }
-
-    #dados-titular-pix{
-        padding: auto;
-        margin: auto;
-    }
-
-    #dados-titular-xuliz{
-        padding: auto;
-        margin: auto;
-    }
-
-    .cards-list{
-        display: block;
-    }
-
-    #sub-dados{
-        display: block;
     }
     
+    #dados-titular-cartao,
+    #dados-titular-pix,
+    #dados-titular-xuliz {
+        margin: auto;
+    }    
+
+    .cards-list,
+    #sub-dados,
+    #sub-dados>#validade {
+        display: block;
+    }
+
     #card-credito,
     #card-pix,
-    #card-xuliz {
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
-
+    #card-xuliz,
     #card-credito-c,
     #card-pix2,
-    #card-xuliz2 {
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
-
+    #card-xuliz2,
     #card-credito3,
     #card-pix-c,
-    #card-xuliz3 {
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
-
+    #card-xuliz3,
     #card-credito4,
     #card-pix4,
     #card-xuliz-c {
@@ -2423,30 +2402,22 @@ option::selection {
 
     #card-credito>img,
     #card-pix>img,
-    #card-xuliz>img {
-        width: 20px;
-        margin-bottom: 35px;
-    }
-
+    #card-xuliz>img,
     #card-credito-c>img,
     #card-pix2>img,
-    #card-xuliz2>img {
-        width: 20px;
-        margin-bottom: 35px;
-    }
-
+    #card-xuliz2>img,
     #card-credito3>img,
     #card-pix-c>img,
-    #card-xuliz3>img {
-        width: 20px;
-        margin-bottom: 35px;
-    }
-
+    #card-xuliz3>img,
     #card-credito4>img,
     #card-pix4>img,
     #card-xuliz-c>img {
         width: 20px;
         margin-bottom: 35px;
+    }
+
+    .container7>button{
+        padding: 20px;
     }
 
     /*.block-title{
@@ -2464,28 +2435,64 @@ option::selection {
 
     #logo-rodape>p{
         margin-right: 5px;
-        font-size: 7px;
+        font-size: 10px;
     }
     
     #logo-rodape>img{
         width: auto;
-        height: 10px;
+        height: 13px;
     }
 
     #copy{
-        margin-left: 20%;
-    }
-
-    #copy>p{
-        white-space: nowrap;
-        font-size: 7px;
+        display: none;
     }
 
     #logo-rodape>p{
         white-space: nowrap;
     }
 
-    /*Cartão*/
+    #floatingInputGroup1-c,
+    #floatingInputGroup2-email,
+    #inputDDD-cell,
+    #cpf,
+    #numeroCartao,
+    #validadeInput,
+    #validadeInput-cvv,
+    #nomeCartaoInput,
+    #floatingInputGroup1-c-pix,
+    #floatingInputGroup2-email-pix,
+    #inputDDD-cell-pix,
+    #cpf2,
+    #floatingInputGroup1-c-xuliz,
+    #floatingInputGroup2-email-xuliz,
+    #inputDDD-cell-xuliz,
+    #cpf3 {
+        padding: 15px;
+    }    
+
+    .form-floating-parcelas{
+        padding: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    #floatingSelectGrid{
+        padding: 20px;
+        display: flex;
+    }
+
+    #sub-dados2{
+        display: block;
+    }
+
+    #sub-dados2>#validade{
+        width: 100%;
+        display: block;
+    }
+
+    #sub-dados2>.form-floating-parcelas{
+        width: 100%;
+    }
 
     /*.block-title2{
         display: flex;
@@ -2522,26 +2529,10 @@ option::selection {
 
     #card-credito-c,
     #card-pix2,
-    #card-xuliz2 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /*PIX*/
-
-    #cpf2{
-        width: 100%;
-    }
-
+    #card-xuliz2,
     #card-credito3,
     #card-pix-c,
-    #card-xuliz3 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /*Xuliz*/
-
+    #card-xuliz3,
     #card-credito4,
     #card-pix4,
     #card-xuliz-c {
@@ -2549,7 +2540,8 @@ option::selection {
         margin-bottom: 10px;
     }
 
-    #cpf3{
+    #cpf2,
+    #cpf3 {
         width: 100%;
     }
 }
