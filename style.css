@@ -2347,9 +2347,9 @@ option::selection {
 
 @media screen and (max-width: 390px) {
     .container{
-        display: inline;
-        margin: 0;
-        padding: 10px;
+        display: block;
+        margin: auto;
+        padding: auto;
     }
 
     .container2{
