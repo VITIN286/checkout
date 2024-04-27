@@ -25,12 +25,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transform: scale(0.75);
 }
 
 .container2{
     background: var(--xuliz-colors-brancoc, #F1F1F1);
     width: 680px;
-    height: 720px;
+    height: 780px;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -42,7 +43,7 @@
 .container3{
     background: var(--xuliz-colors-pretoc, #3D3D3D);
     width: 440px;
-    height: 720px;
+    height: 780px;
     border-radius: 0 20px 20px 0;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     position: relative;
@@ -939,7 +940,7 @@ input:not(:focus)::placeholder {
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     text-align: right;
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -948,14 +949,15 @@ input:not(:focus)::placeholder {
 #total{
     display: flex;
     flex-direction: column;
-    margin-bottom: 95px;
+    margin-bottom: 200px;
 }
+
 
 #parcelas{
     color: var(--XulizColors-LIGHT-XULIZ-02, #D9BC85);
     text-align: right;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1280,7 +1282,7 @@ input:-webkit-autofill {
     width: 50%;
     border: 1px solid #ccc; 
     box-sizing: border-box;
-    height: 44px;
+    height: 46px;
     border-radius: 10px;
     border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
     background: var(--XulizColors-BRANCO, #FFF);
@@ -1290,7 +1292,7 @@ input:-webkit-autofill {
 .form-select-parcelas {
     margin: 2px;
     margin-left: 10px;
-    width: 89%;
+    width: 90%;
     height: 90%;
     border: none;
     cursor: pointer;
@@ -1320,6 +1322,7 @@ input:-webkit-autofill {
 
 .form-floating-parcelas label.active {
     top: 0;
+    margin-top: 1px;
     font-weight: 500;
     font-size: 11px;
     color: #6c757d;
@@ -2349,18 +2352,18 @@ option::selection {
     .container{
         display: block;
         margin: auto;
-        padding: auto;
+        padding: 10px;
     }
 
     .container2{
         height: auto;
         padding-bottom: 80px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-    #floatingInputGroup1,
-    #floatingInputGroup2,
-    #inputDDD {
-        padding: 15px;
+    .container3{
+        padding-bottom: 15px;
     }
 
     #dados-titular,
@@ -2420,18 +2423,7 @@ option::selection {
         padding: 20px;
     }
 
-    /*.block-title{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #title{
-        font-size: 15px;
-    }
-
-    .block-title>p{
-        font-size: 15px;
-    }*/
+    #title
 
     #logo-rodape>p{
         margin-right: 5px;
@@ -2467,19 +2459,74 @@ option::selection {
     #floatingInputGroup2-email-xuliz,
     #inputDDD-cell-xuliz,
     #cpf3 {
-        padding: 15px;
-    }    
+        display: flex;
+        padding-top: 25px;
+    }
 
-    .form-floating-parcelas{
+    #floatingInputGroup1,
+    #floatingInputGroup2,
+    #inputDDD {
+        display: flex;
+        padding-top: 25px;
+    }
+
+    .form-floating-parcelas {
+        position: relative;
+        width: 50%;
+        border: 1px solid #ccc; 
+        box-sizing: border-box;
+        height: 54px;
+        border-radius: 10px;
+        border: 2px solid var(--XulizColors-CINZA_PADRO, #999);
+        background: var(--XulizColors-BRANCO, #FFF);
+        cursor: pointer;
+    }
+
+    .form-floating label {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 20px;
+        color: var(--XulizColors-CINZA-PADRÂO);
+    
+        position: absolute;
+        top: 50%;
+        left: 22px;
+        transform: translateY(-50%);
+        color: #6c757d;
+        pointer-events: none;
+        transition: top 0.17s ease-in-out, padding 0.15s ease-in-out, font-size 0.15s ease-in-out;
+        display: inline-block;
+    }
+
+    .form-floating-cpf label {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 20px;
+        color: var(--XulizColors-CINZA-PADRÂO);
+    
+        position: absolute;
+        top: 50%;
+        left: 22px;
+        transform: translateY(-50%);
+        color: #6c757d;
+        pointer-events: none;
+        transition: top 0.17s ease-in-out, padding 0.15s ease-in-out, font-size 0.15s ease-in-out;
+    }
+
+    /*.form-floating-parcelas{
         padding: 25px;
-        display: flex;
-        align-items: center;
+        box-sizing: border-box; 
     }
 
-    #floatingSelectGrid{
+    .floatingSelectGrid{
         padding: 20px;
-        display: flex;
-    }
+        border: solid 1px;
+        background: transparent;
+    }*/
 
     #sub-dados2{
         display: block;
