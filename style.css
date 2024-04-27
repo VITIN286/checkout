@@ -1460,6 +1460,7 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
+    display: none;
 }
 
 .container2-process{
@@ -1507,6 +1508,7 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
+    display: none;
 }
 
 .container2-s{
@@ -1630,6 +1632,7 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
+    display: none;
 }
 
 .container2-d{
@@ -1848,6 +1851,7 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
+    display: none;
 }
 
 .sub-container-p{
@@ -2132,6 +2136,7 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
+    display: none;
 }
 
 .sub-container-p2{
@@ -2364,7 +2369,6 @@ option::selection {
         display: block;
         padding: 10px;
         padding-top: 0px;
-        display: none;
     }
 
     .container2{
@@ -2375,6 +2379,23 @@ option::selection {
     .container2-s{
         width: 465px;
         height: 800px;
+        
+    }
+
+    .container-s{
+        display: none;
+    }
+
+    .container-d{
+        display: none;
+    }
+
+    .container-p{
+        display: none;
+    }
+
+    .container-p2{
+        display: none;
     }
 
     .container2-d{
@@ -2444,13 +2465,19 @@ option::selection {
     }
 
     .sub-container-p{
-        display: block;
+        display: none;
     }
+
+    .sub-container-p2{
+        display: none;
+    }
+
 
     .container2-process{
         padding: 19px 94px;
         width: 465px;
         height: 800px;
+        display: none;
     }
 
     .geral-itens{
