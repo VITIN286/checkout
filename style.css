@@ -1478,9 +1478,11 @@ option::selection {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.7);
+    transform: scale(0.8);
     height: 100vh;
 }
+
+
 
 .process>p{
     color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
@@ -1525,7 +1527,7 @@ option::selection {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .process-s{
@@ -1561,6 +1563,10 @@ option::selection {
     border: 1px solid var(--XulizColors-CINZA_PADRO, #999);
     background: var(--xuliz-colors-brancoc, #F1F1F1);
     transform: scale(1.0);
+}
+
+#process-mobile{
+    display: none;
 }
 
 .list-process{
@@ -1633,8 +1639,6 @@ option::selection {
     border-radius: 20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.233);
     display: flex;
-    justify-self: center;
-    align-items: center;
     justify-content: center;
 }
 
@@ -1643,12 +1647,12 @@ option::selection {
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 
 .process{
     display: flex;
-    transform: scale(0.7);
+    transform: scale(0.8);
     margin-bottom: 50px;
 }
 
@@ -1824,6 +1828,7 @@ option::selection {
     font-weight: 600;
     line-height: normal;
     margin-bottom: 30px;
+    transform: scale(1.2);
 }
 
 #time>strong{
@@ -2355,36 +2360,55 @@ option::selection {
 /*RESPONSIVIDADE MOBILE*/
 
 @media screen and (max-width: 390px) {
-
     .container{
         display: block;
-        margin: auto;
         padding: 10px;
+        padding-top: 0px;
         display: none;
     }
 
     .container2{
         height: auto;
         padding-bottom: 80px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .container3{
-        padding-bottom: 15px;
-        margin-bottom: 15px;
     }
 
     .container2-s{
-        height: auto;
-        width: 440px;
-        padding: 15px;
+        width: 465px;
+        height: 800px;
     }
 
     .container2-d{
-        height: auto;
-        width: 440px;
-        padding: 15px;
+        height: 800px;
+        width: 465px;
+    }
+
+    .container3-p{
+        width: 330px;
+        height: 349px;
+    }
+
+    .list-p{
+        transform: scale(1.1);
+    }
+
+    .list-p2{
+        transform: scale(1.1);
+    }
+
+    .list-process{
+        transform: scale(1.1);
+    }
+
+    .pix-process{
+        margin-top: 30px;
+        transform: scale(1.3);
+    }
+
+    .app-xuliz-p{
+        margin: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transform: scale(1.4);
     }
 
     #botao-concluir{
@@ -2425,15 +2449,30 @@ option::selection {
 
     .container2-process{
         padding: 19px 94px;
+        width: 465px;
+        height: 800px;
+    }
+
+    .geral-itens{
+        transform: scale(0.7);
     }
 
     .process{
         display: flex;
         flex-direction: column;
+        transform: scale(0.9);
     }
 
-    .process>p{
-        margin-bottom: 25px;
+    .process>img{
+        margin-top: 40px;
+    }
+
+    #process-mobile{
+        display: block;
+    }
+
+    .container2-process>.process>p{
+        display: none;
     }
 
     .container2-p{
