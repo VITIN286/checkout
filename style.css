@@ -1460,7 +1460,6 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
-    display: none;
 }
 
 .container2-process{
@@ -1508,7 +1507,6 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
-    display: none;
 }
 
 .container2-s{
@@ -1632,7 +1630,6 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
-    display: none;
 }
 
 .container2-d{
@@ -1801,7 +1798,7 @@ option::selection {
     line-height: normal;
 }
 
-.list-p-pix>button{
+#btnCopiar {
     display: flex;
     padding: 10px 25px;
     justify-content: center;
@@ -1813,13 +1810,35 @@ option::selection {
     cursor: pointer;
 }
 
-.list-p-pix>button>p{
+#btnCopiar>p {
     color: var(--XulizColors-PADRO-XULIZ-LIGHT-XULIZ, #F2E2C4);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 16px; /* 114.286% */
+}
+
+#btnCopiar.copiado {
+    display: flex !important;
+    padding: 10px 25px !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    gap: 10px !important;
+    border-radius: 10px !important;
+    border: 2px solid var(--xuliz-colors-pretoc, #3D3D3D) !important;
+    background: var(--XulizColors-VERDE, #279C33) !important;
+}
+
+#btnCopiar.copiado>p{
+    color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 114.286% */
+    width: 101px;
 }
 
 #time{
@@ -1851,7 +1870,6 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
-    display: none;
 }
 
 .sub-container-p{
@@ -2112,7 +2130,6 @@ option::selection {
     align-items: center;
     height: 100vh;
     transform: scale(0.75);
-    display: none;
 }
 
 .sub-container-p2{

@@ -6,6 +6,7 @@
     <title>Xuliz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -441,12 +442,12 @@
                     </div>
                     <div class="pix-process">
                         <div class="qrcode-process">
-                            <img src="images/QRCode.png">
+                            <!--<img src="images/QRCode.png">-->
                         </div>
                         <div class="list-p-pix">
                             <p id="pixp1">Informações importantes</p>
                             <p id="pixp2">Caso o tempo de pagamento tenha expirado e o <br> Pix não tenha sido pago, seu pedido será <br> cancelado automaticamente. <strong>Não pague após <br> este horário</strong></p>
-                            <button><p>Cópiar código</p></button>
+                            <button id="btnCopiar"><p>Cópiar código</p></button>
                         </div>
                     </div>
                 </div>

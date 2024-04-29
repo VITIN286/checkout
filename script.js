@@ -571,3 +571,32 @@ pix4.addEventListener('click', function(){
     //Tempo de processamento
     document.getElementById('dia-util').innerHTML = 'Imediato';
 });
+
+
+let textoParaQRCode = "https://api.whatsapp.com/send?phone=5562995458153";
+
+let qrcode = new QRCode(document.getElementsByClassName("qrcode-process")[0], {
+    text: textoParaQRCode,
+    width: 256,
+    height: 256,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+
+let textoOriginal = textoParaQRCode;
+
+document.getElementById("btnCopiar").addEventListener("click", function() {
+    navigator.clipboard.writeText(textoOriginal).then(function() {
+        console.log("Texto copiado para a área de transferência: " + textoOriginal);
+        document.getElementById("btnCopiar").classList.add("copiado");
+        document.getElementById("btnCopiar").getElementsByTagName("p")[0].innerText = "Copiado";
+        setTimeout(function(){
+            document.getElementById("btnCopiar").classList.remove("copiado");
+            document.getElementById("btnCopiar").getElementsByTagName("p")[0].innerText = "Copiar código";
+        }, 1000); // Remove a classe 'copiado' e restaura o texto após 1 segundo
+    }, function(error) {
+        console.error("Falha ao copiar texto: ", error);
+        alert("Erro ao copiar código!");
+    });
+});
