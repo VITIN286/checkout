@@ -2884,6 +2884,19 @@ option::selection {
         height: 920px;
     }
 
+    .container2-s>.geral-itens{
+        width: 460px;
+        height: 1220px;
+    }
+
+    .list-imgs{
+        margin-top: 50px;
+    }
+
+    #valuep{
+        margin-bottom: 50px;
+    }
+
     .process>p{
         display: none;
     }
@@ -2942,10 +2955,59 @@ option::selection {
 
     .container-d{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container2-d{
         width: 460px;
+        height: 920px;
+    }
+
+    .container2-d>.geral-itens{
+        width: 460px;
+        height: 120px;
+    }
+
+    #valuep-d{
+        display: none;
+    }
+
+    .pix-process{
+        display: block;
+    }
+
+    .list-p-pix{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: scale(1.5);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #listp1-d{
+       display: block;
+       color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #listp2-d{
+        display: block;
+        color: rgba(61, 61, 61, 0.60);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 10px;
     }
 
     .container-p{
