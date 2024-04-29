@@ -2854,6 +2854,7 @@ option::selection {
 @media screen and (max-width: 390px) {
     .container{
         display: block;
+        display: none;
     }
 
     .container2{
@@ -2867,25 +2868,80 @@ option::selection {
     .container-process{
         display: flex;
         flex-direction: column;
-        display: none;
     }
 
     .container2-process{
         width: 395px;
+        height: 920px;
     }
 
     .container-s{
         display: flex;
-        display: none;
     }
 
     .container2-s{
         width: 460px;
+        height: 920px;
+    }
+
+    .process>p{
+        display: none;
+    }
+
+    #process-mobile-s{
+        font-size: 60px;
+        display: block;
+        margin-top: 55px;
+    }
+
+    #listp1{
+        display: none;
+    }
+
+    #listp2{
+        display: none;
+    }
+
+    #listp1-mobile{
+        color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    #listp2-mobile{
+        color: rgba(61, 61, 61, 0.60);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 20px;
+    }
+
+    #listp2-mobile>strong{
+        color: var(--xuliz-colors-pretoc, #3D3D3D);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .process-container{
+        display: flex;
+        padding: 60px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
     }
 
     .container-d{
         display: flex;
-        display: none;
     }
 
     .container2-d{
@@ -2897,13 +2953,11 @@ option::selection {
         flex-direction: column;
         transform: scale(0.8);
         padding: 5px;
-        display: none;
     }
 
     .container-p2{
         display: flex;
         flex-direction: column;
-        display: none;
     }
 
     .list-p{
