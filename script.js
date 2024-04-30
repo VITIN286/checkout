@@ -591,10 +591,6 @@ document.getElementById("btnCopiar").addEventListener("click", function() {
         console.log("Texto copiado para a área de transferência: " + textoOriginal);
         document.getElementById("btnCopiar").classList.add("copiado");
         document.getElementById("btnCopiar").getElementsByTagName("p")[0].innerText = "Copiado";
-        setTimeout(function(){
-            document.getElementById("btnCopiar").classList.remove("copiado");
-            document.getElementById("btnCopiar").getElementsByTagName("p")[0].innerText = "Copiar código";
-        }, 1000); // Remove a classe 'copiado' e restaura o texto após 1 segundo
     }, function(error) {
         console.error("Falha ao copiar texto: ", error);
         alert("Erro ao copiar código!");

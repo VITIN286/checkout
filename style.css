@@ -2882,12 +2882,100 @@ option::selection {
         width: 460px;
     }
 
+    .container2-s>.geral-itens{
+        height: 1030px;
+    }
+
+    .container2-s>.geral-itens>.process-container{
+        width: 490px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .geral-itens>.process{
+        display: none;
+    }
+
+    .geral-itens>.process-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: scale(1.8);
+        margin-top: 55px;
+    }
+
+    .geral-itens>.process-mobile>p{
+        color: var(--XulizColors-PADRO-XULIZ-DARK-XULIZ, #262626);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px; /* 109.375% */
+    }
+
+    .geral-itens>.process-mobile>img{
+        margin-top: 20px;
+    }
+
+    .list-p{
+        display: none;
+    }
+
+    .value>#valuep{
+        display: none;
+    }
+
+    .list-p-mobile{
+        transform: scale(1.5);
+        padding: 50px;
+        margin-bottom: 30px;
+    }
+
+    .list-p-mobile2{
+        padding: 50px;
+        transform: scale(1.5);
+    }
+
     .container-d{
         display: flex;
     }
 
     .container2-d{
         width: 460px;
+        height: 1030px;
+    }
+
+    .container2-d>.geral-itens{
+        height: 140px;
+    }
+
+    .container2-d>.geral-itens>.process-container{
+        width: 490px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .pix-process{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-p-pix{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: scale(1.4);
+        padding: 20px;
+    }
+    #time{
+        transform: scale(1.8);
     }
 
     .container-p{
@@ -2970,10 +3058,6 @@ option::selection {
 
     .process>img{
         margin-top: 40px;
-    }
-
-    #process-mobile{
-        display: block;
     }
 
     #dados-titular,
